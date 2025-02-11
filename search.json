@@ -7,11 +7,11 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "posts/bruin/index.html",
+    "href": "posts/bruin/index.html",
     "title": "myblog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Import necessary libraries\n\nimport pandas as pd  \nimport matplotlib.pyplot as plt  \nimport seaborn as sns  \n\nNext, we are going to load the dataset from the given URL (The Palmer Penguin Dataset)\n\nurl = \"https://raw.githubusercontent.com/pic16b-ucla/24W/main/datasets/palmer_penguins.csv\"\npenguins = pd.read_csv(url)\n\nNow, we will add labels, titels, and a legend to the plot\n\nplt.title('Flipper Length vs. Body Mass in Penguins', fontsize=14)  \nplt.xlabel('Flipper Length (mm)', fontsize=12)  \nplt.ylabel('Body Mass (g)', fontsize=12) \nplt.legend(title='Species')  \nplt.grid(alpha=0.3)  \n\nplt.tight_layout()\nplt.show()\n\nC:\\Users\\sayhi\\AppData\\Local\\Temp\\ipykernel_21920\\530881654.py:4: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.\n  plt.legend(title='Species')\n\n\n\n\n\n\n\n\n\nNow, we are going to use Seaborn to create a scatter plot. On the x-axis, we will plot Flipper Length (mm) and we will plot Body Mass (g) on the y-axis\n\nsns.scatterplot(data=penguins, x='Flipper Length (mm)', y='Body Mass (g)', hue='Species', alpha=0.7)"
   },
   {
     "objectID": "about.html",
@@ -19,6 +19,13 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "testblogname",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
